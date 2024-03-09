@@ -1,0 +1,306 @@
+<!-- <div class="sidebar sidebar-black sidebar-fixed" id="sidebar"> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      font-family:"Slab Serif Fonts";
+      margin: 0;
+      padding:0;
+    }
+    body{color:rgb(66, 118, 178); 
+     }
+      
+    /* card  */
+    .card{ 
+    position:relative;
+    padding:1.5em .5em .5em;
+    text-align:center;
+    border-radius: 1em;
+    box-shadow:10px 10px 5px rgba(201, 200, 200, 0.2);
+    box-shadow:10px 10px 5px rgba(0,0,0,.2);
+   /* min-width: 50em; */
+    min-height: 20em;
+}
+.header{ box-shadow:5px 5px 5px rgba(168, 187, 234, 0.2);
+  text-shadow: 5px 5px 5px rgba(0,0,0,.2) }
+    /* sidebar color */
+      .sidebar{
+         
+         background-color:rgb(20, 66, 117);
+         font-family:"Slab Serif Fonts";
+         font-size:small;
+         font-weight: bold;
+         
+      }
+  
+      .sidebar ul li:hover a,
+      .sidebar ul li.hovered a{
+        color:rgb(212, 206, 161);
+      }
+   .sidebar ul li a .icon,
+   .sidebar ul li.hovered a .icon{
+     position:relative;
+     display: flex;
+   }
+ /* li:hover{background-color: rgb(139, 135, 135);  */
+ 
+  /* } */
+/* header's font type */
+  .title-style{
+    font-family: 'Serif', 'Arial Narrow', Arial, sans-serif;
+    font-weight: normal;
+    font-size: 250%;
+    font-style:normal;
+  }
+
+  /* button */
+  .btn{background-color:rgb(66, 118, 178);
+       color:snow;
+      width:40%;
+    font-weight: bold; 
+    font-size:120%;}
+
+    .btn:hover{background-color: rgb(203, 208, 208);}
+/* 
+    user profile */
+  
+    .dropdown-menu{background-color: rgb(203, 208, 208);}
+    .input-group-text{background-color:rgb(32, 113, 153);}
+
+ 
+  </style>
+  <script type="text/javascript">
+    let list=document.querySelectorAll(".sidebar li");
+    function activeLink(){
+       list.forEach(item =>{
+        item.classList.remove("hovered");
+       });
+       this.classList.add("hovered");
+    }
+    list.forEach(item=>item.addEventListener("mouseover",activeLink));
+
+  
+    // user profile
+
+  </script>
+</head>
+
+  
+  <!-- slider.html -->
+  <div class="sidebar sidebar-fixed" id="sidebar">       
+   <ul class="sidebar-nav" data-coreui="navigation" data-simplebar="">
+      <li class="nav-item"><a class="nav-link" href="viewProfile1">
+          <svg class="nav-icon">
+            <!-- <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-speedometer"></use> -->
+            <span class="px-0"><img  src="../Directory/asset/images/brand.png" alt="" width="50px" height="50px"></span>  
+          </svg><font size="5"><b>PDD</b></font><span class="badge badge-sm bg-info ms-auto"></span></a>
+      </li>     
+      <li class="nav-group">
+          <a class="nav-link nav-group-toggle" href="#">     
+          <span class="px-1"><img  src="assets/img/icon1/pagoda.png" alt="" width="25px" height="25px"></span>      
+          <!-- Create Pagoda</a> -->
+          <font size="3.5rem">ဘုရားများပြုလုပ်ရန်</font></a>
+          <ul class="nav-group-items">
+            <li class="nav-item"><a class="nav-link" href="insertPagoda"><span class="nav-icon"></span> ဘုရားထည့်ရန်</a></li>
+          </ul>
+      </li>
+      <li class="nav-group">
+          <a class="nav-link nav-group-toggle" href="#">   
+          <span class="px-1"><img  src="assets/img/icon1/pagoda.png" alt="" width="25px" height="25px"></span>    
+          <!-- Create Pagoda</a> -->
+          <font size="3.5rem">ဘုရားများပြင်ရန်</font></a>
+          <ul class="nav-group-items">
+            <li class="nav-item"><a class="nav-link" href="viewPagoda"><span class="nav-icon"></span>ဘုရားများ</a></li>    
+          </ul> 
+      </li>
+  <!-- <li class="nav-group"><a class="nav-link nav-group-toggle" href="#"> -->
+       
+          <!-- <span class="px-1"><img  src="assets/img/icon1/menu-bar.png" alt="" width="25px" height="25px"></span> -->
+          <!-- Create Main Menu</a> -->
+          <!-- <font size="3.5rem"> အမျိုးအစားများပြုလုပ်ရန်</font>   </a> -->
+
+        <!-- <ul class="nav-group-items"> -->
+
+          <!-- <li class="nav-item"><a class="nav-link" href="insertmenu"><span class="nav-icon"></span> Insert</a></li> -->
+          <!-- <li class="nav-item"><a class="nav-link" href="updateMenu"><span class="nav-icon"></span> Update</a></li> -->
+          <!-- <li class="nav-item"><a class="nav-link" href="deletemenu.html"><span class="nav-icon"></span> Delete</a></li>              -->
+        <!-- </ul> -->
+  <!-- </li> -->
+
+      <li class="nav-group">
+        <a class="nav-link nav-group-toggle" href="#">
+        <span class="px-1"><img  src="assets/img/icon1/sub-category.png" alt="" width="25px" height="25px"></span>
+        <!-- Create  SubMenu</a> -->
+        <font size="3.5rem"> အမျိုးအစားခွဲများပြုလုပ်ရန် </font></a>
+        <ul class="nav-group-items">
+          <li class="nav-item"><a class="nav-link" href="insertSubmenu"><span class="nav-icon"></span> ပြုလုပ်ရန်</a></li>       
+        </ul>
+      </li>
+
+    <li class="nav-group"><a class="nav-link nav-group-toggle" href="#">
+      <span class="px-1"><img  src="assets/img/icon1/sub-category.png" alt="" width="25px" height="25px"></span>
+      <!-- Create  SubMenu</a> -->
+      <font size="3.5rem">အမျိုးစားခွဲများပြုပြင်ရန်</font>
+    </a>
+    <ul class="nav-group-items">
+      <!-- <li class="nav-item"><a class="nav-link" href="insertSubmenu"><span class="nav-icon"></span> Insert</a></li> -->
+      <li class="nav-item"><a class="nav-link" href="viewHistory"><span class="nav-icon"></span> သမိုင်းကြောင်းများ</a></li>
+      <li class="nav-item"><a class="nav-link" href="viewFamous"><span class="nav-icon"></span> ဖူးမြော်နိုင်သောနေရာများ</a></li>
+      <li class="nav-item"><a class="nav-link" href="viewBuddhism"><span class="nav-icon"></span> သာသနာထွန်းကားမှု့</a></li>
+      <li class="nav-item"><a class="nav-link" href="viewEcclesiastes"><span class="nav-icon"></span> ဒေသနာတော်များ</a></li>
+      <li class="nav-item"><a class="nav-link" href="viewNational"><span class="nav-icon"></span> ခေတ်အဆက်ဆက်ထိန်းသိမ်းမှု့များ</a></li>
+      <li class="nav-item"><a class="nav-link" href="viewHistoricalEvent"><span class="nav-icon"></span> သမိုင်းဝင်ဖြစ်ရပ်များ</a></li>
+      <!-- <li class="nav-item"><a class="nav-link" href="viewGeneral"><span class="nav-icon"></span> အထွေထွေ</a></li> -->
+
+      <!-- <li class="nav-item"><a class="nav-link" href="deletemenu.html"><span class="nav-icon"></span> Delete</a></li>              -->
+    </ul>
+  </li>
+ 
+  <li class="nav-group">
+    <a class="nav-link nav-group-toggle" href="#">
+    <span class="px-1"><img  src="assets/img/icon1/sub-category.png" alt="" width="25px" height="25px"></span>
+    <!-- Create  Yatu</a> -->
+    <font size="3.5rem"> ရတုတေးချိုးများ</font></a>
+    <ul class="nav-group-items">
+      <li class="nav-item"><a class="nav-link" href="insertYatu"><span class="nav-icon"></span> ပြုလုပ်ရန်</a></li>    
+      <li class="nav-item"><a class="nav-link" href="viewYatu"><span class="nav-icon"></span> ပြင်ဆင်ရန်</a></li>       
+    </ul>
+  </li>
+
+  <li class="nav-group">
+    <a class="nav-link nav-group-toggle" href="#">
+    <span class="px-1"><img  src="assets/img/icon1/sub-category.png" alt="" width="25px" height="25px"></span>
+    <!-- Create  Yatu</a> -->
+    <font size="3.5rem">သတင်းအချက်လက်များ</font></a>
+    <ul class="nav-group-items">
+      <li class="nav-item"><a class="nav-link" href="insertInformation"><span class="nav-icon"></span> ပြုလုပ်ရန်</a></li>    
+      <li class="nav-item"><a class="nav-link" href="viewInformation"><span class="nav-icon"></span> ပြင်ဆင်ရန်</a></li>       
+    </ul>
+  </li>
+
+    <li class="nav-group"><a class="nav-link nav-group-toggle" href="#">
+      <span class="px-1"><img  src="assets/img/icon1/multimedia.png" alt="" width="25px" height="25px"></span>      <!-- Create  SubMenu</a> -->
+      <font size="3.5rem">ဗီဒီယိုဖိုင်များထည့်သွင်းရန်</font></a>
+      <ul class="nav-group-items">
+        <li class="nav-item"><a class="nav-link" href="insertFestivalVideo"><span class="nav-icon"></span> မှတ်တမ်းဗီဒီယိုများထည့်ရန်</a></li>
+        <!-- <li class="nav-item"><a class="nav-link" href="updateFestival"><span class="nav-icon"></span> Update</a></li> -->
+        <!-- <li class="nav-item"><a class="nav-link" href="deleteFestival.html"><span class="nav-icon"></span> Delete</a></li>              -->
+      </ul>
+  </li>
+
+  <li class="nav-group"><a class="nav-link nav-group-toggle" href="#">
+    <span class="px-1"><img  src="assets/img/icon1/multimedia.png" alt="" width="25px" height="25px"></span>      <!-- Create  SubMenu</a> -->
+    <font size="3.5rem">ဗီဒီယိုဖိုင်များပြင်ရန်</font></a>
+    <ul class="nav-group-items">
+      <li class="nav-item"><a class="nav-link" href="viewFestivalVideo"><span class="nav-icon"></span> မှတ်တမ်းဗီဒီယိုများ</a></li>
+      <!-- <li class="nav-item"><a class="nav-link" href="updateFestival"><span class="nav-icon"></span> Update</a></li> -->
+      <!-- <li class="nav-item"><a class="nav-link" href="deleteFestival.html"><span class="nav-icon"></span> Delete</a></li>              -->
+    </ul>
+</li>
+  
+
+    <li class="nav-group"><a class="nav-link nav-group-toggle" href="#">   
+      <span class="px-1"><img  src="assets/img/icon1/camera.png" alt="" width="25px" height="25px"></span>
+      <!-- Create Photo</a> -->
+     <font size="3.5rem"> ဓါတ်ပုံများထည့်သွင်းရန်</font></a>
+      <ul class="nav-group-items g-0">
+        <li class="nav-item"><a class="nav-link" href="insertPhoto"><span class="nav-icon"></span> ဘုရားပုံတော်များထည့်ရန်</a></li>
+        <li class="nav-item"><a class="nav-link" href="insertFestivalPhoto"><span class="nav-icon"></span>ပွဲတော်နှင့်ဆိုင်သောပုံများထည့်ရန်</a></li>
+        <!-- <li class="nav-item"><a class="nav-link" href="updatePhoto"><span class="nav-icon"></span> Update</a></li> -->
+        <!-- <li class="nav-item"><a class="nav-link" href="deletemenu.html"><span class="nav-icon"></span> Delete</a></li>              -->
+      </ul>
+  </li>
+  <li class="nav-group"><a class="nav-link nav-group-toggle" href="#">   
+    <span class="px-1"><img  src="assets/img/icon1/camera.png" alt="" width="25px" height="25px"></span>
+    <!-- Create Photo</a> -->
+   <font size="3.5rem"> ဓါတ်ပုံများပြင်ရန်</font></a>
+    <ul class="nav-group-items g-0">
+      <li class="nav-item"><a class="nav-link" href="viewPagodaPhoto"><span class="nav-icon"></span> ဘုရားပုံတော်များ</a></li>
+      <li class="nav-item"><a class="nav-link" href="viewFestivalPhoto"><span class="nav-icon"></span>ပွဲတော်နှင့်ဆိုင်သောပုံများ</a></li>
+      <!-- <li class="nav-item"><a class="nav-link" href="updatePhoto"><span class="nav-icon"></span> Update</a></li> -->
+      <!-- <li class="nav-item"><a class="nav-link" href="deletemenu.html"><span class="nav-icon"></span> Delete</a></li>              -->
+    </ul>
+</li>
+
+    
+</ul> 
+  </div>
+
+  <div class="wrapper d-flex flex-column min-vh-100  bg-light">
+    <header class="header header-sticky mb-4">
+      <div class="container-fluid">
+        <button class="header-toggler px-md-0 me-md-3" type="button" onclick="coreui.Sidebar.getInstance(document.querySelector('#sidebar')).toggle()">
+          <svg class="icon icon-lg">
+            <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-menu"></use>
+          </svg> </ul>
+        </button>
+        <!-- <a class="header-brand d-md-none" href="#">
+          <svg width="118" height="46" alt="CoreUI Logo">
+            <use xlink:href="assets/brand/coreui.svg#full"></use>
+          </svg>-->
+          <!-- <h2>Shwe San Daw Pagoda Information System</h2> 
+        </a> -->
+        <ul class="header-nav d-none d-md-flex mt-3">
+         <h2 class="title-style"><b>Pagoda Digital Directory (PDD)</b></h2>
+         
+        </ul>
+        
+       <!-- user profile -->
+       <div class="header-left d-flex"> 
+        <ul class="header-nav ms-3">
+          <li class="nav-item dropdown">
+            <a class="nav-link py-0" data-coreui-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"> 
+
+              <div class="avatar avatar-md">
+                <img  src="assets/img/icon1/businessman.png" alt="" width="30px" height="25px"></span> 
+              </div>
+
+              </a>
+
+            <div class="dropdown-menu dropdown-menu-end pt-0">
+            
+
+             <!-- <a class="dropdown-item" href="#">
+
+                <img  src="assets/img/icon1/login.png" alt="" width="30px" height="30px">
+                <span class="px-2">Register</span></a>
+              -->
+<!-- 
+              <div class="dropdown-menu dropdown-menu-end pt-0"> -->
+                <a class="dropdown-item" href="viewProfile1">
+
+                  <img  src="assets/img/icon1/profile.png" alt="" width="30px" height="30px"> 
+                  <span class="px-2"> ViewProfile </span></a>
+               
+              
+                  <a class="dropdown-item" href="changeProfile.php">
+
+                    <img  src="assets/img/icon1/profile.png" alt="" width="30px" height="30px">
+                    <span class="px-2"> Update Profile </span>
+                    </a> 
+                    
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="index">
+
+                      <img  src="assets/img/icon1/logout.png" alt="" width="30px" height="30px">
+                      <span class="px-2"> Logout </span>
+                      </a>
+               </div>
+  
+
+              
+
+</li>
+        </ul>
+
+        </div>
+  
+        
+
+
+
