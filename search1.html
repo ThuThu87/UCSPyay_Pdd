@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MFE2KVAqETOlR8wS1F5l/AJsSH66k+soWUahP6QIt9/cxhR8R+94eCrUHd94joB1" crossorigin="anonymous">
+  <title>Bootstrap Dropdown with Search Button Example</title>
+</head>
+<body>
+
+<div class="container mt-5">
+  <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Select an item
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <input class="form-control" type="text" placeholder="Search" aria-label="Search" id="searchInput">
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">Item 1</a>
+      <a class="dropdown-item" href="#">Item 2</a>
+      <a class="dropdown-item" href="#">Item 3</a>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-rf73I1CqFq6P5BXa02xXcWAsX1zUqzQ98MeWWQ2BqD6qI3Edp2EnZyUEj++1hEm6" crossorigin="anonymous"></script>
+<script>
+  // Filter dropdown items based on user input
+  document.getElementById('searchInput').addEventListener('input', function () {
+    const searchTerm = this.value.toLowerCase();
+    const dropdownItems = document.querySelectorAll('.dropdown-item');
+
+    dropdownItems.forEach(function (item) {
+      const textContent = item.textContent.toLowerCase();
+      if (textContent.includes(searchTerm)) {
+        item.style.display = 'block';
+      } else {
+        item.style.display = 'none';
+      }
+    });
+  });
+</script>
+</body>
+</html>

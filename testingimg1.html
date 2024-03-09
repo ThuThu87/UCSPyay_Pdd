@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <style>
+        /* Style for the caption */
+        .image-caption {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            text-align: center;
+        }
+
+        /* Style for the container (make sure it's positioned relative) */
+        .image-container {
+            position: relative;
+        }
+
+        /* Style for the image */
+        .image-container img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+            <div class="image-container">
+                <img src="Directory/asset/images/1.jpg" width="300" height="300" alt="Your Image">
+                <div class="image-caption" style="object-fit: contain;">Your Caption Here
+                </div>
+                    <i><img src="img/right_arrow.png" width="20" height="30" align="right" style="object-position: top;"></i>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    // Add JavaScript to show/hide caption on mouseover
+    document.addEventListener("DOMContentLoaded", function () {
+        var imageContainer = document.querySelector('.image-container');
+        var imageCaption = document.querySelector('.image-caption');
+
+        imageContainer.addEventListener('mouseover', function () {
+            imageCaption.style.display = 'block';
+        });
+
+        imageContainer.addEventListener('mouseout', function () {
+            imageCaption.style.display = 'none';
+        });
+    });
+</script>
+
+</body>
+</html>
