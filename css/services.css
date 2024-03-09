@@ -1,0 +1,133 @@
+/*
+Template Name:Consulting
+File: Layout CSS
+Author: Templates On Web
+Author URI: https://templateonweb.com/
+Licence: <a href="https://www.templateonweb.com/license">Website Template Licence</a>
+*/
+
+
+/********************* services_main ****************/
+#services_main{ 
+ background-image: url(../img/34.jpg);
+  padding-bottom: 60px;
+ padding-top: 340px;
+ background-repeat: no-repeat;
+ background-size: cover;
+ }
+.services_main_1{ 
+ background-color: #2a385569;
+ width: 30%;
+ text-align: center;
+ padding: 25px 20px 2px 10px;
+ }
+.services_main_1 h2{ 
+ color: #fff;
+ font-weight:bold;
+ }
+.services_main_1 i{ 
+ color: #fff;
+ padding-left:5px;
+ }
+.services_main_1 p a{ 
+ color: #fff;
+ }
+.services_main_1 p a:hover{ 
+ color: #fff;
+ }
+/********************* services_main_end ****************/
+/********************* history ****************/
+#history{ 
+ padding-top:30px;
+ padding-bottom:20px;
+ }
+.history_2{ 
+ text-align:center;
+ }
+.history_3{  
+background-color: #fff;
+    box-shadow: 0 0 2px 1px #d1e0ff;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+	padding: 3px 3px 10px 3px;
+ }
+.history_3 h3{ 
+ padding-top:10px;
+ padding-bottom:10px;
+ color: #334c7e;
+ }
+.history_3 p{
+ padding-bottom:0;
+}
+.history_3 ul li a{
+background:#2a3855;
+width:35px;
+height:35px;
+font-size:14px;
+}
+.history_3 ul li a i{
+line-height:35px;
+}
+
+
+/********************* history_end ****************/
+
+
+
+
+
+@media screen and (max-width : 767px){
+#services_main {
+ padding-bottom: 50px;
+ padding-top: 50px;
+}
+.services_main_1 {
+ width: 100%;
+}
+.history_3{
+padding: 3px 5px 10px 5px;
+text-align:left;
+ }
+}
+
+@media (min-width:470px) and (max-width:767px) {
+.history_4 li {
+ display: inline-block;
+}
+} 
+
+@media (min-width:768px) and (max-width:991px) { 
+.services_main_1 {
+ width: 50%;
+}
+.history_3 h3 {
+ font-size: 25px;
+}
+.history_4 h4 {
+ font-size: 20px;
+}
+} 
+ 
+@media (min-width:992px) and (max-width:1200px) {
+.services_main_1 {
+ width: 50%;
+}
+.history_3 h3 {
+ font-size: 25px;
+}
+.history_4 h4 {
+ font-size: 20px;
+}
+}
+
+@media (min-width:1201px) and (max-width:1320px) {
+.excellent_2 {
+ top: 258%;
+}
+#header .mega-dropdown-menu:before {
+ left: 470px;
+}
+#header .mega-dropdown-menu:after {
+ left: 468px;
+}
+}

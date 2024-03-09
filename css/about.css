@@ -1,0 +1,276 @@
+/*
+Template Name:Consulting
+File: Layout CSS
+Author: Templates On Web
+Author URI: http://templateonweb.com/
+Licence: <a href="http://www.templateonweb.com/terms.php?v=content&contentid=152">Website Template Licence</a>
+*/
+
+
+/********************* about ****************/
+#about{ 
+ background-image: url(../img/31.jpg);
+ padding-bottom: 60px;
+ padding-top: 340px;
+ background-repeat: no-repeat;
+ background-size: cover;
+ }
+.about_1{ 
+ background-color: #2a385569;
+ width: 30%;
+ text-align: center;
+ padding: 25px 20px 2px 10px;
+ }
+.about_1 h2{ 
+ color: #fff;
+ font-weight:bold;
+ }
+.about_1 i{ 
+ color: #fff;
+ padding-left:5px;
+ }
+.about_1 p a{ 
+ color: #fff;
+ }
+.about_1 p a:hover{ 
+ color: #fff;
+ }
+/********************* about_end ****************/
+/********************* about_inner ****************/
+#about_inner{ 
+ padding-top:30px;
+ padding-bottom:30px;
+ }
+.about_inner_1 img{   
+ padding:0;
+ margin:0;
+ width:100%;
+ padding-top:10px;
+ padding-bottom:10px;
+	  }
+.about_inner_2{  
+ padding: 0;
+ margin: 0;
+ background: #181f2d;
+ border: 2px solid #ffffff;
+ padding-top: 20px;
+ padding-bottom: 39px;
+ margin-top: 12px;
+  }
+.about_inner_2 h2{  
+ padding: 0;
+ margin: 0;
+ padding-top: 10px;
+ font-weight: bold;
+ color: #08e4ef;
+ padding-bottom: 10px;  
+  }
+.about_inner_2 p{  
+ padding: 0;
+ margin: 0;
+ font-size: 20px;
+ color: #ddd;		   
+ }
+ 
+#progress {
+background-image: url(../img/2.jpg);
+background-attachment:fixed;
+}
+.prog_m{
+padding-top:100px;
+padding-bottom:100px;
+background:#2a3855d9;
+}
+.prog_1i span i{
+font-size:60px; 
+color:#08e4ef;
+}
+.prog_1i h1{
+color:#fff;
+margin-top:10px;
+margin-bottom:5px; 
+}
+.prog_1i h5{
+color:#ddd; 
+}
+
+#award_w{
+padding-top:40px;
+padding-bottom:40px;
+}
+.awrad_w2l p{
+color:#789395;
+margin-top:5px;
+padding-bottom:0;  
+}
+.awrad_w2{
+margin-top:30px; 
+}
+.awrad_w2l .col-sm-2 h4{
+color:#08e4ef; 
+ }
+ 
+.featurse_m{
+background:#2a3855d9; 
+padding-top:60px;
+padding-bottom:70px; 
+}
+#features{
+background: url(../img/3.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+background-attachment: fixed;
+}
+#features h1{
+color:#ffffff;
+}
+
+#features p{
+color: #ddd;
+font-size:16px;
+}
+
+.features_inner{
+background:#5d6b8d;
+padding:30px;
+opacity:0.9;
+}
+.features_1 h2{
+margin-top:10px;
+margin-bottom:10px; 
+}
+.features_1 h3{
+margin-bottom:10px;
+color:#eee; 
+}
+.features_1 h4{
+margin-top:10px;
+margin-bottom:10px;
+color:#ddd; 
+}
+.port{
+font-weight:bold;
+font-size:60px;
+padding-bottom:20px;
+padding-top:0;
+margin-top:0;
+}
+.features_inner hr{
+border-color:#6f7fa7;
+}
+/********************* about_inner_end ****************/
+
+
+
+@media screen and (max-width : 767px){
+#about {
+ padding-bottom: 50px;
+ padding-top: 50px;
+}
+.about_1 {
+ width: 100%;
+}
+#about_inner {
+ text-align: center;
+}
+.about_inner_2 h2 {
+ font-size:35px;
+}
+.prog_1i{
+ float:left;
+ margin:10px;
+ text-align:left;
+}
+.awrad_w2l .col-sm-2 h4{
+margin-bottom:10px; 
+ }
+.port{
+font-size:40px; 
+}
+.features_inner{
+margin-top:10px;
+}
+.about_inner_2{
+padding:10px; 
+ }
+.about_inner_2 br{
+display:none;
+ }
+.about_inner_2 p{
+text-align:left; 
+ }
+.about_inner_2 h2{
+text-align:left; 
+ }
+}
+
+@media (min-width:470px) and (max-width:767px) {
+	
+} 
+
+@media (min-width:768px) and (max-width:991px) { 
+.about_1 {
+ width: 50%;
+}
+.about_inner_2 p {
+ font-size: 14px;
+}
+.about_inner_2 h2 {
+ padding-top: 0px;
+ padding-bottom: 0px;
+}
+.about_inner_2 {
+ padding-top: 10px;
+ padding-bottom: 10px;
+ margin-top: 0px;
+}
+.choose_4 h3 {
+ padding-top: 0px;
+}
+.choose_4 p {
+ font-size: 15px;
+}
+.news_4 h3 {
+ font-size: 20px;
+}
+} 
+ 
+@media (min-width:992px) and (max-width:1200px) {
+.about_1 {
+ width: 50%;
+}
+.about_inner_2 p {
+ font-size: 14px;
+}
+.about_inner_2 h2 {
+ padding-top: 0px;
+ padding-bottom: 0px;
+}
+.about_inner_2 {
+ padding-top: 10px;
+ padding-bottom: 10px;
+ margin-top: 0px;
+}
+.choose_4 h3 {
+ padding-top: 0px;
+}
+.choose_4 p {
+ font-size: 15px;
+}
+.news_4 h3 {
+ font-size: 20px;
+}
+}
+
+@media (min-width:1201px) and (max-width:1320px) {
+.excellent_2 {
+ top: 258%;
+}
+#header .mega-dropdown-menu:before {
+ left: 470px;
+}
+#header .mega-dropdown-menu:after {
+ left: 468px;
+}
+}
